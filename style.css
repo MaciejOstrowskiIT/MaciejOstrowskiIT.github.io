@@ -134,7 +134,7 @@ a {
 
 .about{
     text-overflow: ellipsis;
-    height: 50vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -146,12 +146,13 @@ a {
     color: white;
     font-size: 30px;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
 
 }
 
 .about > p, .about > footer {
     margin-right: 0;
+    padding: 0 50px 0 50px;
 }
 
 .projects{
