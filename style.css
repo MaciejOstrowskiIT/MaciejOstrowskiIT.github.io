@@ -155,24 +155,36 @@ a {
   padding: 0 20px 0 20px;
 }
 
-/* .projects{
-    padding: 0 10px 20px 10px ;
-    height: 100%;
-    display: flex;
-    align-content:center;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    background: #fffff5;
-    background-repeat: no-repeat;
-    background-size:cover;
-    width: 100%;
-    color: white;
-    font-size: 25px;
-    flex-wrap: wrap;
-    gap: 30px;
-    
-} */
+.projects {
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  background: #fffff5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+  flex-wrap: wrap;
+  gap: 30px;
+  color: black;
+}
+
+.projects > header {
+  padding: 20px;
+}
+
+.projects > p {
+  padding-left: 50px;
+  text-justify: inter-word;
+}
+
+.projects > footer {
+  padding-bottom: 30px;
+}
 
 .check-projects {
   color: white;
@@ -181,7 +193,10 @@ a {
   padding: 10px 40px 10px 40px;
   font-size: medium;
 }
-
+/* .check-projects:hover {
+  color: red !important;
+  border-color: red; */
+/* } */
 /* Hamburger */
 
 .hamburger {
