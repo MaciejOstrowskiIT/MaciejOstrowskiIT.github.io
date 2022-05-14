@@ -25,6 +25,7 @@ a {
 }
 
 .navigation {
+  flex: 1;
   background-color: rgba(255, 255, 255, 0.63);
 }
 
@@ -38,6 +39,8 @@ a {
   gap: 20px;
   list-style: none;
   flex-wrap: wrap;
+}
+.navigation > ul > li {
 }
 
 .navigation > img {
@@ -197,6 +200,7 @@ a {
   color: red !important;
   border-color: red; */
 /* } */
+
 /* Hamburger */
 
 .hamburger {
@@ -253,6 +257,13 @@ a {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.hidden {
+  display: none;
+  flex-grow: 0;
+  flex: 0;
+  height: 0;
 }
 
 @media only screen and (max-width: 1000px) {
