@@ -38,36 +38,106 @@
                 <li><a href="#5">Pobierz CV</a></li>
             </ul>
         </nav>
-        <article id="about" class="about about-background">
-            <header class="visually-hidden">O mnie!</header>
-            <p>Cześć! Jestem Maciej,</p>
-            <p class="work">Front-End Web Developer</p>
-            <p>
-                Witaj na mojej stronie, gdzie znajdziesz
-                projekty nad którymi aktualnie pracuję,
-                przydatne linki oraz pobierzesz CV.
-            </p>
-            <footer>
-                <a class="check-projects" href="#portfozlio"
-                    >Sprawdź moje projekty</a
-                >
-            </footer>
-            <span>-----------------------</span>
-        </article>
 
-        <article
-            id="projects"
-            class="about projects-background">
-            <header class="visually-hidden">Projekt</header>
-            <p>
-                Główny projekt, którego założeniem było
-                stworzenie aplikacji bankowej
-            </p>
-        </article>
+        <section class="main-content">
+            <article id="about" class="about-article">
+                <title>O mnie</title>
+                <p>Jestem Maciej Ostrowski</p>
+                <strong>Front-End Developer</strong>
+                <p>Uczę się technologii takich jak:</p>
+                <ul>
+                    <li>HTML + CSS + Javascript</li>
+                    <li>React.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                </ul>
+                <p>
+                    Moje projekty korzystają z Git'a i są
+                    dostępne na Github.
+                </p>
+                <p>Pozostałe umiejętności:</p>
+                <ul>
+                    <li>Zarządzanie zespołem</li>
+                    <li>Język angielski B2</li>
+                    <li>
+                        Domyślnie czytam dokumentację w j.
+                        angielskim
+                    </li>
+                    <li>
+                        Znajomość środowiska Visual Studio
+                        Code
+                    </li>
+                </ul>
+            </article>
+            <article
+                id="education"
+                class="education-article">
+                <title>Wykształcenie i kursy</title>
+                <section>
+                    <p>
+                        Akademia Nauk Stosowanych w Koninie
+                    </p>
+                    <p>Kierunek: informatyka</p>
+                    <p>Tytuł naukowy: licencjat</p>
+                    <p>
+                        Praca naukowa: Realizacja zamka z
+                        zabezpieczeniami wielopoziomowymi
+                    </p>
+                    <p>Stack technologiczny:</p>
+                    <ul>
+                        <li>Platforma: Arduino</li>
+                        <li>Język programowania: C++</li>
+                    </ul>
+                </section>
+                <section>
+                    <p>Kurs CODE:ME</p>
+                    <p>
+                        Tytuł: Javascript + React od podstaw
+                    </p>
+                    <p>Projekt: React banking App</p>
+                    <p>Stack technologiczny:</p>
+                    <ul>
+                        <li>HTML + CSS</li>
+                        <li>React.js</li>
+                        <ul>
+                            <li>React router</li>
+                            <li>JWT</li>
+                            <li>Mongoose</li>
+                            <li>bcrypt</li>
+                        </ul>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>Express.js</li>
+                    </ul>
+                </section>
+                <section>
+                    <p>Książki</p>
+                    <p>You don't know JS Kyle Simpson</p>
+                    <p>Czysty kod Robert C. Martin</p>
+                    <p>
+                        Pragmatyczny programista David
+                        Thomas, Andrew Hunt
+                    </p>
+                    <p>
+                        JavaScript. Przewodnik. Poznaj język
+                        mistrzów programowania. Wydanie VII
+                        David Flanagan
+                    </p>
+                    <p>
+                        Git. Rozproszony system kontroli
+                        wersji Włodzimierz Gajda
+                    </p>
+                </section>
+            </article>
+            <article id="projects" class="projects-article">
+                <title>Projekty</title>
+                <p>Zobacz moje projekty:</p>
+                <section>React banking app</section>
+                <section>This website</section>
+            </article>
+        </section>
 
-        <article
-            id="contact"
-            class="about contact-background">
+        <section id="contact" class="contact-section">
             <header class="visually-hidden">Kontakt</header>
             <h3>Zachęcam do kontaktu poprzez formularz:</h3>
             <form
@@ -113,7 +183,7 @@
                     class="form-submit"
                     style="width: 200px" />
             </form>
-        </article>
+        </section>
         <footer class="footer">
             <ul class="footer-navigation">
                 <li><a href="#about">O mnie</a></li>
