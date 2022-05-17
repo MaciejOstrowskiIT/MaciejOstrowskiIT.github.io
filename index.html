@@ -19,34 +19,21 @@
     <nav class="navigation">
         <label class="hamburger">
             <input type="checkbox" id="check" >
-            <span></span>
+`            <span></span>
             <span></span>
             <span></span>
         </label>
         <!-- <img src="./logos/Code Creator-logos_transparent_small.png" alt="Logo Creator"> -->
         <ul>
-            <li><a href="#1">Strona główna</a></li>
-            <li><a href="#2">O mnie</a></li>
+            <li><a href="#about">O mnie</a></li>
             <li><a href="#3">Projekty</a></li>       
             <li><a href="#4">Kontakt</a></li>
             <li><a href="#5">Pobierz CV</a></li>
         </ul>
-
-
     </nav>
 
-        <!-- 
-    strona główna
-    o mnie
-    projekty
-    kontakt
-    pobierz CV -->
 
-        <!--     menu ma się zwijać w burgera przy małej rozdzielczości -->
-
-    
-
-        <article id="about" class="about">
+        <article id="about" class="about about-background">
             <header class="visually-hidden">O mnie!</header>
             <p>Cześć! Jestem Maciej,</p>
             <p class="work">Front-End Web Developer</p>
@@ -55,33 +42,43 @@
             <span>-----------------------</span>
         </article>
 
-        <article id="projects" class="projects">
+        <article id="projects" class="about projects-background">
             <header class="visually-hidden">Projekty</header>
-            <p>Część moich projektów:</p>
-        
+            <p>Poniżej znajdują się moje projekty:</p>
             <footer><a class="check-projects" href="#portfozlio">Sprawdź moje projekty</a></footer>
         </article>
 
-        <article id="contact">
-            <header></header>
-            <img src="#" alt="#">
-            <p></p>
-            <footer></footer>
+        <article id="contact" class="about contact-background">
+            <header class="visually-hidden">Kontakt</header>
+            <h3>Zachęcam do kontaktu poprzez formularz:</p></h3>
+        
+                <form action="" style="font-size: 20px ;" class="contact-form">
+                    <label for="name" class="form-username">Imię:</label>
+                    <input type="text" placeholder="Twoje imię" required class="form-username-input">
+                    <label for="e-mail" class="form-email">E-mail:</label>
+                    <input type="email" placeholder="Twój e-mail" required class="form-email-input">
+                    <label for="content" class="form-content">Treść wiadomości:</label>
+                    <textarea placeholder="Treść wiadomości" required class="form-content-input"></textarea>
+                    <input type="submit" value="Wyślij" class="form-submit" style="width:200px ;">
+                </form>
+
+
         </article>
+
 
 
         <footer class="footer">
             <ul class="footer-navigation">
-                <li><a href="#2">O mnie</a></li>
-                <li><a href="#3">Projekty</a></li>
-                <li><a href="#4">Kontakt</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#contact">Kontakt</a></li>
                 <li><a href="#5">Pobierz CV</a></li>
             </ul>
             <img src="./logos/Code Creator-logos_transparent_small.png" alt="Kreator Kodu logo">
             <ul class="footer-icons">
-                <li><a href="#facebook" class=""> <img src="" alt=""><span class="visually-hidden">Facebook</span>Facebook</a></li>
-                <li><a href="#linkedin"> <img src="" alt=""><span class="visually-hidden">LinkedIn</span>Facebook</a></li>
-                <li><a href="#instagram"> <img src="" alt=""><span class="visually-hidden">Instagram</span>Facebook</a></li>
+                <li><a href="https://www.facebook.com/maciek.ostrowski.1023" target="_blank" class=""> <img src="" alt=""><span class="visually-hidden">Facebook</span>Facebook</a></li>
+                <li><a href="https://linkedin.com/in/maciej-ostrowski-it" target="_blank"> <img src="" alt=""><span class="visually-hidden">LinkedIn</span>LinkedIn</a></li>
+                <li><a href="https://github.com/MaciejOstrowskiIT" target="_blank"> <img src="" alt=""><span class="visually-hidden">Github</span>Github</a></li>
             </ul>
             <span class="footer-text"> &copy;2022 Stworzone z pasji ;)</span>
 
