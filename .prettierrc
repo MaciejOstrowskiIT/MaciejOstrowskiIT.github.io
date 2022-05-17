@@ -1,0 +1,8 @@
+{
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 60,
+    "proseWrap": "always",
+    "tabWidth": 4,
+    "bracketSameLine": true
+}

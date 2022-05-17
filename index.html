@@ -1,81 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./app.js" defer></script>
-    <title>Document</title>
-
-    
-</head>
-<body>
-
-    <nav class="navigation">
-        <label class="hamburger">
-            <input type="checkbox" id="check" >
-`            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <!-- <img src="./logos/Code Creator-logos_transparent_small.png" alt="Logo Creator"> -->
-        <ul>
-            <li><a href="#about">O mnie</a></li>
-            <li><a href="#projects">Projekty</a></li>       
-            <li><a href="#contact">Kontakt</a></li>
-            <li><a href="#5">Pobierz CV</a></li>
-        </ul>
-    </nav>
-
-
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./app.js" defer></script>
+        <title>Maciej Ostrowski</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <label class="hamburger">
+                <input type="checkbox" id="check" />
+                ` <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- <img src="./logos/Code Creator-logos_transparent_small.png" alt="Logo Creator"> -->
+            <ul>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#5">Pobierz CV</a></li>
+            </ul>
+        </nav>
         <article id="about" class="about about-background">
             <header class="visually-hidden">O mnie!</header>
             <p>Cześć! Jestem Maciej,</p>
             <p class="work">Front-End Web Developer</p>
-            <p>Witaj na mojej stronie, gdzie znajdziesz projekty nad którymi aktualnie pracuję, przydatne linki oraz pobierzesz CV.</p>
-            <footer><a class="check-projects" href="#portfozlio">Sprawdź moje projekty</a></footer>
+            <p>
+                Witaj na mojej stronie, gdzie znajdziesz
+                projekty nad którymi aktualnie pracuję,
+                przydatne linki oraz pobierzesz CV.
+            </p>
+            <footer>
+                <a class="check-projects" href="#portfozlio"
+                    >Sprawdź moje projekty</a
+                >
+            </footer>
             <span>-----------------------</span>
         </article>
 
-        <article id="projects" class="about projects-background">
-
-
-            <header class="visually-hidden">Projekty</header>
-            <p>Poniżej znajdują się moje projekty:</p>
-            <footer><a class="check-projects" href="#portfolio">Sprawdź moje projekty</a></footer>
-        
-        
-        
+        <article
+            id="projects"
+            class="about projects-background">
+            <header class="visually-hidden">Projekt</header>
+            <p>
+                Główny projekt, którego założeniem było
+                stworzenie aplikacji bankowej
+            </p>
         </article>
 
-        <article id="contact" class="about contact-background">
+        <article
+            id="contact"
+            class="about contact-background">
             <header class="visually-hidden">Kontakt</header>
-            <h3>Zachęcam do kontaktu poprzez formularz:</p></h3>
-
-
-
-        
-                <form class="contact-form" style="font-size: 20px;" id="contactform" action="https://formsubmit.io/send/maciekgt540@gmail.com" method="POST" target="_blank">
-                    <label for="name" class="form-username">Imię:</label>
-                    <input name="name" type="text" placeholder="Twoje imię" required class="form-username-input">
-                    <label for="e-mail" class="form-email">E-mail:</label>
-                    <input name="email" type="email" placeholder="Twój e-mail" required class="form-email-input">
-                    <label for="content" class="form-content">Treść wiadomości:</label>
-                    <textarea name="contact" placeholder="Treść wiadomości" required class="form-content-input"></textarea>
-                    <input name="_formsubmit_id" type="text" style="display:none">
-                    <input type="submit" value="Wyślij" class="form-submit" style="width:200px ;">
-                </form>
-
-
+            <h3>Zachęcam do kontaktu poprzez formularz:</h3>
+            <form
+                class="contact-form"
+                style="font-size: 20px"
+                id="contactform"
+                action="https://formsubmit.io/send/maciekgt540@gmail.com"
+                method="POST"
+                target="_blank">
+                <label for="name" class="form-username"
+                    >Imię:</label
+                >
+                <input
+                    name="name"
+                    type="text"
+                    placeholder="Twoje imię"
+                    required
+                    class="form-username-input" />
+                <label for="e-mail" class="form-email"
+                    >E-mail:</label
+                >
+                <input
+                    name="email"
+                    type="email"
+                    placeholder="Twój e-mail"
+                    required
+                    class="form-email-input" />
+                <label for="content" class="form-content"
+                    >Treść wiadomości:</label
+                >
+                <textarea
+                    name="contact"
+                    placeholder="Treść wiadomości"
+                    required
+                    class="form-content-input"></textarea>
+                <input
+                    name="_formsubmit_id"
+                    type="text"
+                    style="display: none" />
+                <input
+                    type="submit"
+                    value="Wyślij"
+                    class="form-submit"
+                    style="width: 200px" />
+            </form>
         </article>
-
-
-
         <footer class="footer">
             <ul class="footer-navigation">
                 <li><a href="#about">O mnie</a></li>
@@ -83,16 +121,45 @@
                 <li><a href="#contact">Kontakt</a></li>
                 <li><a href="#5">Pobierz CV</a></li>
             </ul>
-            <img src="./logos/Code Creator-logos_transparent_small.png" alt="Kreator Kodu logo">
+            <img
+                src="./logos/Code Creator-logos_transparent_small.png"
+                alt="Kreator Kodu logo" />
             <ul class="footer-icons">
-                <li><a href="https://www.facebook.com/maciek.ostrowski.1023" target="_blank" class=""> <img src="" alt=""><span class="visually-hidden">Facebook</span>Facebook</a></li>
-                <li><a href="https://linkedin.com/in/maciej-ostrowski-it" target="_blank"> <img src="" alt=""><span class="visually-hidden">LinkedIn</span>LinkedIn</a></li>
-                <li><a href="https://github.com/MaciejOstrowskiIT" target="_blank"> <img src="" alt=""><span class="visually-hidden">Github</span>Github</a></li>
+                <li>
+                    <a
+                        href="https://www.facebook.com/maciek.ostrowski.1023"
+                        target="_blank"
+                        class="">
+                        <img src="" alt="" /><span
+                            class="visually-hidden"
+                            >Facebook</span
+                        >Facebook</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://linkedin.com/in/maciej-ostrowski-it"
+                        target="_blank">
+                        <img src="" alt="" /><span
+                            class="visually-hidden"
+                            >LinkedIn</span
+                        >LinkedIn</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://github.com/MaciejOstrowskiIT"
+                        target="_blank">
+                        <img src="" alt="" /><span
+                            class="visually-hidden"
+                            >Github</span
+                        >Github</a
+                    >
+                </li>
             </ul>
-            <span class="footer-text"> &copy;2022 Stworzone z pasji ;)</span>
-
+            <span class="footer-text">
+                &copy;2022 Stworzone z pasji ;)</span
+            >
         </footer>
-
-
-</body>
+    </body>
 </html>
