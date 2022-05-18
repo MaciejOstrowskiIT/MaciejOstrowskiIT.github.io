@@ -1,18 +1,28 @@
 :root {
-    --main-color: #fff;
-    --contact-color: #fff;
+    --main-color: rgb(87, 83, 83);
+    --contact-color: rgb(207, 155, 238);
     --about-color: #85dcb1;
-    --education-color: #e8a87c;
+    --education-color: hsl(24, 70%, 70%);
     --footer-color: #fff;
+    --projects-color: rgb(118, 102, 102);
+    --about-me-color-transparency: rgba(0, 0, 0, 0.206);
+
+    --base-padding: 1rem;
+    --base-margin: 1rem;
+    --base-flex-gap: 1rem;
+    --base-border-radius: 10px;
 }
 
 html {
     background-color: var(--main-color);
+    scroll-behavior: smooth;
+    scroll-padding-top: 5em;
 }
 body {
     /* background: black; */
     margin: 0;
     flex-basis: auto;
+    /* scroll-behavior: smooth; */
 }
 
 article {
@@ -149,6 +159,7 @@ a {
 /* Contact section */
 
 .contact-section {
+    background: var(--contact-color);
     text-overflow: ellipsis;
     height: 100%;
     width: 100%;
@@ -232,7 +243,7 @@ a {
 }
 
 .projects-article {
-    background-color: rgb(232, 232, 232);
+    background-color: var(--projects-color);
 }
 
 .education-article {
@@ -243,10 +254,56 @@ a {
 }
 
 .education-article section {
+    display: flex;
+    flex-direction: column;
     border: 1px solid black;
     background-color: #e4e7ed54;
     width: 300px;
     flex-wrap: wrap;
+    padding: 20px;
+    text-align: justify;
+}
+
+.about-me {
+}
+.about-me-header {
+    display: flex;
+    align-items: center;
+    gap: var(--base-flex-gap);
+    background-color: var(--about-me-color-transparency);
+}
+.about-me-header img {
+    box-sizing: border-box;
+    max-width: 100px;
+}
+
+.tech-stack,
+.other-skills,
+.about-me-header img,
+.about-me-header {
+    margin: var(--base-margin);
+    padding: var(--base-padding);
+    border-radius: var(--base-border-radius);
+}
+
+.about-others {
+    display: flex;
+    gap: var(--base-flex-gap);
+    flex-wrap: wrap;
+}
+
+.about-others section {
+    flex: 1 1 340px;
+}
+
+.tech-stack {
+    border: 1px solid black;
+}
+
+.other-skills {
+    margin: var(--base-margin);
+    padding: var(--base-padding);
+    border: 1px solid black;
 }
 
 /* Hamburger */
@@ -328,6 +385,9 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
+    html {
+        scroll-padding-top: 348px;
+    }
     .projects-list article {
         min-height: 450px;
         min-width: 350px;
