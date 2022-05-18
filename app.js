@@ -5,6 +5,7 @@
     let getMenuItems = document.querySelectorAll(
         '.navigation > ul > li'
     );
+    let getMenu = document.querySelector('.navigation ul');
     let getStatusOfHamburgerInput =
         document.querySelector('#check');
     function chceckInputStatus() {
@@ -25,6 +26,11 @@
                 element.classList.remove('hidden');
             }
         });
+        if (myWidth < 767) {
+            getMenu.classList.add('visually-hidden');
+        } else {
+            element.classList.remove('visually-hidden');
+        }
     }
 
     getCollapsibleClass.addEventListener('click', (e) => {
@@ -34,6 +40,19 @@
                     element.classList.remove('hidden');
                 } else {
                     element.classList.add('hidden');
+                }
+                if (
+                    getMenu.classList.contains(
+                        'visually-hidden'
+                    )
+                ) {
+                    getMenu.classList.remove(
+                        'visually-hidden'
+                    );
+                } else {
+                    getMenu.classList.add(
+                        'visually-hidden'
+                    );
                 }
             }
             chceckInputStatus();

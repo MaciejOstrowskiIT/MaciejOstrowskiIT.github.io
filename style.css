@@ -52,8 +52,8 @@ a {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    flex: 1;
-    backdrop-filter: blur(2px);
+    flex: 0.1 1 30px;
+    backdrop-filter: blur(3px);
 }
 
 .navigation > ul {
@@ -161,8 +161,6 @@ a {
 .contact-section {
     background: var(--contact-color);
     text-overflow: ellipsis;
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,9 +168,7 @@ a {
     color: white;
     font-size: 30px;
     flex-wrap: wrap;
-    gap: 40px;
-    padding-bottom: 20px;
-    padding-top: 30px;
+    padding: var(--base-padding);
 }
 
 .contact-form {
@@ -182,7 +178,7 @@ a {
     align-items: center;
     width: 50vw;
     max-width: 500px;
-    min-width: 240px;
+    min-width: 280px;
     height: 50vw;
     max-height: 500px;
     min-height: 400px;
@@ -252,6 +248,8 @@ a {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: var(--base-flex-gap);
+    /* margin: var(--base-margin); */
 }
 
 .education-article section {
@@ -260,14 +258,16 @@ a {
     border: 1px solid black;
     background-color: #e4e7ed54;
     width: 300px;
-    flex-wrap: wrap;
-    padding: 20px;
+    padding: var(--base-padding);
+    margin: var(--base-margin);
+    border-radius: var(--base-border-radius);
     text-align: justify;
 }
 
 .about-me {
 }
 .about-me-header {
+    min-width: 270px;
     display: flex;
     align-items: center;
     gap: var(--base-flex-gap);
@@ -275,12 +275,14 @@ a {
 }
 .about-me-header img {
     box-sizing: border-box;
-    max-width: 100px;
+    max-width: 150px;
+    border-radius: var(--base-border-radius);
+    padding: 0;
+    margin: 0;
 }
 
 .tech-stack,
 .other-skills,
-.about-me-header img,
 .about-me-header {
     margin: var(--base-margin);
     padding: var(--base-padding);
@@ -396,6 +398,7 @@ a {
     .footer {
         padding-left: 0vw;
         padding-right: 0vw;
+        text-align: center;
     }
     .footer > ul {
         display: flex;
@@ -409,9 +412,6 @@ a {
         grid-area: 1 / 3 / 3 / 4;
     }
 
-    .hamburger {
-        display: flex;
-    }
     .navigation > ul,
     .navigation {
         flex-direction: column;
@@ -419,6 +419,6 @@ a {
     }
     .hamburger {
         display: flex;
-        align-content: space-around;
+        align-items: flex-end;
     }
 }
