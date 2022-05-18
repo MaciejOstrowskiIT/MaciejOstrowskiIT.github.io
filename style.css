@@ -1,5 +1,13 @@
+:root {
+    --main-color: #fff;
+    --contact-color: #fff;
+    --about-color: #85dcb1;
+    --education-color: #e8a87c;
+    --footer-color: #fff;
+}
+
 html {
-    background-color: #121d33;
+    background-color: var(--main-color);
 }
 body {
     /* background: black; */
@@ -7,6 +15,12 @@ body {
     flex-basis: auto;
 }
 
+article {
+    padding: 10px;
+}
+section article {
+    padding: 10px;
+}
 a:visited {
     color: inherit;
 }
@@ -18,18 +32,18 @@ a {
 
 .navigation {
     display: flex;
-    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0.589);
     padding-left: 7.5vw;
     padding-right: 7.5vw;
     margin: 0px;
     flex-direction: column;
     align-content: center;
     align-items: center;
-}
-
-.navigation {
     flex: 1;
-    background-color: rgb(239, 203, 153);
+    backdrop-filter: blur(2px);
 }
 
 .navigation > ul {
@@ -214,9 +228,7 @@ a {
 }
 
 .about-article {
-    padding: 0;
-    margin: 0;
-    background-color: #85dcb1;
+    background-color: var(--about-color);
 }
 
 .projects-article {
@@ -224,7 +236,7 @@ a {
 }
 
 .education-article {
-    background-color: #e8a87c;
+    background-color: var(--education-color);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
