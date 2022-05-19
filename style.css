@@ -8,9 +8,12 @@
     --about-me-color-transparency: rgba(0, 0, 0, 0.206);
 
     --base-padding: 1rem;
+    --padding-main: 2rem;
     --base-margin: 1rem;
     --base-flex-gap: 1rem;
     --base-border-radius: 10px;
+    --padding-left-and-right: 0 20vw 0 20vw;
+    --padding-left-and-right-mobile: 8px;
 }
 
 html {
@@ -19,10 +22,8 @@ html {
     scroll-padding-top: 5em;
 }
 body {
-    /* background: black; */
+    /* flex-basis: auto; */
     margin: 0;
-    flex-basis: auto;
-    /* scroll-behavior: smooth; */
 }
 
 article {
@@ -232,6 +233,7 @@ a {
 .main-content article {
     height: 100%;
     min-height: 600px;
+    padding: var(--padding-left-and-right);
 }
 
 .about-article {
@@ -246,7 +248,7 @@ a {
     background-color: var(--education-color);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: var(--base-flex-gap);
     /* margin: var(--base-margin); */
@@ -293,10 +295,12 @@ a {
     display: flex;
     gap: var(--base-flex-gap);
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .about-others section {
     flex: 1 1 340px;
+    /* flex: 1 0 450px; */
 }
 
 .tech-stack {
@@ -380,25 +384,50 @@ a {
     height: 0;
 }
 
+@media only screen and (max-width: 1910px) {
+    .education-article section {
+        flex: 1 0 320px;
+    }
+}
+
+@media only screen and (max-width: 1410px) {
+    .main-content article {
+        padding: var(--padding-left-and-right-mobile);
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     .footer {
         padding-left: 1vw;
         padding-right: 1vw;
     }
+    .main-content article {
+        padding: var(--padding-left-and-right-mobile);
+    }
 }
 
 @media only screen and (max-width: 767px) {
+    :root {
+        --base-margin: 1px;
+    }
+
+    .main-content article {
+        padding: var(--padding-left-and-right-mobile);
+    }
+
     html {
         scroll-padding-top: 348px;
+    }
+    .about-others {
+        margin-top: 20px;
     }
     .projects-list article {
         min-height: 450px;
         min-width: 350px;
     }
     .footer {
-        padding-left: 0vw;
-        padding-right: 0vw;
         text-align: center;
+        padding: 5px 0 5px 0;
     }
     .footer > ul {
         display: flex;
