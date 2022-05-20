@@ -5,7 +5,18 @@
     --education-color: hsl(24, 70%, 70%);
     --footer-color: #fff;
     --projects-color: rgb(118, 102, 102);
-    --about-me-color-transparency: rgba(0, 0, 0, 0.104);
+    --about-me-color-transparency: rgba(
+        255,
+        255,
+        255,
+        0.375
+    );
+    --about-me-color-transparency2: rgba(
+        255,
+        255,
+        255,
+        0.316
+    );
 
     --base-padding: 1rem;
     --padding-main: 2rem;
@@ -231,6 +242,7 @@ a {
 .main-content {
     display: flex;
     flex-direction: column;
+    background-image: url('./images/3840x2160_keyboard-backlight-red-glare-bokeh.jpg');
 }
 
 .main-content article {
@@ -240,15 +252,15 @@ a {
 }
 
 .about-article {
-    background-color: var(--about-color);
+    /* background-color: var(--about-color); */
 }
 
 .projects-article {
-    background-color: var(--projects-color);
+    /* background-color: var(--projects-color); */
 }
 
 .education-article {
-    background-color: var(--education-color);
+    /* background-color: var(--education-color); */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -292,7 +304,7 @@ a {
 }
 
 .about-others {
-    background-color: var(--about-color);
+    /* background-color: var(--about-me-color-transparency2); */
     display: flex;
     flex-direction: row;
     justify-content: center;
