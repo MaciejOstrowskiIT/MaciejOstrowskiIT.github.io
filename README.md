@@ -1,3 +1,3 @@
 # MaciejOstrowskiIT.github.io
 
-Portfolio website
+https://maciejostrowskiit.github.io/
