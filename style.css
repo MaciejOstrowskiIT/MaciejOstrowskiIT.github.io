@@ -1,21 +1,16 @@
 :root {
     --main-color: rgb(87, 83, 83);
-    --contact-color: rgb(207, 155, 238);
+    --contact-color: #333333;
     --about-color: #85dcb1;
     --education-color: hsl(24, 70%, 70%);
-    --footer-color: #fff;
+    --footer-color: rgb(102, 102, 102);
     --projects-color: rgb(118, 102, 102);
+    --main-theme-color: #333333;
     --about-me-color-transparency: rgba(
         255,
         255,
         255,
-        0.375
-    );
-    --about-me-color-transparency2: rgba(
-        255,
-        255,
-        255,
-        0.316
+        0.093
     );
 
     --base-padding: 1rem;
@@ -37,7 +32,7 @@ body {
     font-family: 'Lato', sans-serif;
     /* flex-basis: auto; */
     margin: 0;
-    min-height: 100vh;
+    min-height: 100vw;
 }
 
 article {
@@ -56,11 +51,12 @@ a {
 /* Navigation section */
 
 .navigation {
+    color: #f3f3f3;
     display: flex;
     position: sticky;
     top: 0;
     align-self: stretch;
-    background-color: rgba(255, 255, 255, 0.589);
+    background-color: rgba(255, 255, 255, 0.178);
     padding-left: 7.5vw;
     padding-right: 7.5vw;
     margin: 0px;
@@ -108,7 +104,7 @@ a {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 0.76fr;
-    background-color: rgba(240, 248, 255, 0.592);
+    background-color: var(--footer-color);
     grid-template-areas:
         'a b c'
         'a d c';
@@ -240,23 +236,24 @@ a {
 /* Contact section END */
 
 .main-content {
+    color: white;
     display: flex;
     flex-direction: column;
-    background-image: url('./images/3840x2160_keyboard-backlight-red-glare-bokeh.jpg');
 }
 
 .main-content article {
     height: 100%;
     min-height: 600px;
     padding: var(--padding-left-and-right);
-}
-
-.about-article {
-    /* background-color: var(--about-color); */
+    background-color: var(--main-theme-color);
 }
 
 .projects-article {
-    /* background-color: var(--projects-color); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .education-article {
@@ -272,7 +269,7 @@ a {
 .education-article section {
     display: flex;
     flex-direction: column;
-    background-color: #e4e7ed54;
+    background-color: var(--about-me-color-transparency);
     width: 300px;
     padding: var(--base-padding);
     margin: var(--base-margin);
