@@ -29,7 +29,7 @@
         if (myWidth < 767) {
             getMenu.classList.add('visually-hidden');
         } else {
-            element.classList.remove('visually-hidden');
+            getMenu.classList.remove('visually-hidden');
         }
     }
 

@@ -12,6 +12,12 @@
         255,
         0.093
     );
+    --gradient-button-style: linear-gradient(
+        #000000,
+        #898cb3
+    );
+
+    --main-font-color: #f3f3f3;
 
     --base-padding: 1rem;
     --padding-main: 2rem;
@@ -45,13 +51,13 @@ a:visited {
     color: inherit;
 }
 a {
-    color: black;
+    color: var(--main-font-color);
 }
 
 /* Navigation section */
 
 .navigation {
-    color: #f3f3f3;
+    color: var(--main-font-color);
     display: flex;
     position: sticky;
     top: 0;
@@ -134,8 +140,8 @@ a {
 }
 
 .footer-navigation > li > a {
+    color: var(--main-font-color);
     grid-area: a;
-
     transition: color 0.2s ease-in-out;
 }
 
@@ -146,6 +152,7 @@ a {
 
 .footer-icons > li > a {
     grid-area: c;
+    color: var(--main-font-color);
 }
 
 .footer > ul > li > a {
@@ -328,6 +335,7 @@ a {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .other-skills ul li,
@@ -336,8 +344,11 @@ a {
     flex: 1 1 30%;
     text-align: center;
     padding: var(--base-padding);
-    background: linear-gradient(#e66465, #9198e5);
+    background: var(--gradient-button-style);
     font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .other-skills ul h2,
 .tech-stack ul h2 {
@@ -346,14 +357,14 @@ a {
     padding: var(--base-padding);
     font-size: 1.2em;
 }
-.other-skills ul li:hover,
+/* .other-skills ul li:hover,
 .tech-stack ul li:hover {
     border: 1px solid black;
     flex: 1 1 30%;
     text-align: center;
     padding: var(--base-padding);
     background: #85dcb1;
-}
+} */
 
 /* Hamburger */
 
