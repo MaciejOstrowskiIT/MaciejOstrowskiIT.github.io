@@ -14,7 +14,7 @@
     );
     --gradient-button-style: linear-gradient(
         #000000,
-        #898cb3
+        #5e5e5e
     );
 
     --main-font-color: #f3f3f3;
@@ -257,10 +257,38 @@ a {
 
 .projects-article {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    gap: var(--base-flex-gap);
+}
+.projects-article section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--about-me-color-transparency);
+    width: 300px;
+    padding: var(--base-padding);
+    margin: var(--base-margin);
+    border-radius: var(--base-border-radius);
+    text-align: justify;
+    transition: all 0.2s ease-in-out;
+    gap: var(--base-flex-gap);
+}
+
+.projects-article section a {
+    text-align: center;
+    text-decoration: none;
+}
+.projects-article section:hover {
+    transform: scale(110%);
+}
+
+.icon-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .education-article {
