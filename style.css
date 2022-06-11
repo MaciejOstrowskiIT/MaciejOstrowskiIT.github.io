@@ -71,6 +71,7 @@ a {
     align-items: center;
     flex: 0.1 1 30px;
     backdrop-filter: blur(3px);
+    z-index: 10;
 }
 
 .navigation > ul {
@@ -260,7 +261,9 @@ a {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: var(--base-flex-gap);
+    /* gap: var(--base-flex-gap); */
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
 }
 .projects-article section {
     display: flex;
@@ -282,6 +285,9 @@ a {
 .projects-article section:hover {
     transform: scale(110%);
 }
+.projects-article section:hover::after {
+    z-index: 4;
+}
 
 .icon-div {
     display: flex;
@@ -292,13 +298,13 @@ a {
 }
 
 .education-article {
-    /* background-color: var(--education-color); */
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--base-flex-gap);
-    /* margin: var(--base-margin); */
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
 }
 
 .education-article section {
@@ -310,6 +316,10 @@ a {
     margin: var(--base-margin);
     border-radius: var(--base-border-radius);
     text-align: justify;
+    transition: all 0.2s ease-in-out;
+}
+.education-article section:hover {
+    transform: scale(110%);
 }
 
 .about-me-header {
@@ -342,6 +352,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--base-flex-gap);
+    margin: 30px 0 30px 0;
 }
 
 .about-others section {
