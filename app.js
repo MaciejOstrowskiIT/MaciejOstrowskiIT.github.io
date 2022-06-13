@@ -33,7 +33,7 @@
         }
     }
 
-    getCollapsibleClass.addEventListener('click', (e) => {
+    getCollapsibleClass.addEventListener('click', () => {
         getMenuItems.forEach((element) => {
             if (getStatusOfHamburgerInput !== null) {
                 if (element.classList.contains('hidden')) {

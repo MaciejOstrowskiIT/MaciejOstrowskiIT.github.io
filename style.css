@@ -97,7 +97,7 @@ a {
     text-decoration: none;
     flex-grow: 4;
     font-size: 20px;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
     transition: color 0.2s ease-in-out;
 }
 
@@ -380,7 +380,7 @@ a {
 
 .other-skills ul li,
 .tech-stack ul li {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     flex: 1 1 30%;
     text-align: center;
     padding: var(--base-padding);
