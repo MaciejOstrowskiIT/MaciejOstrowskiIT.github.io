@@ -375,6 +375,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     align-items: stretch;
+    cursor: default;
 }
 
 .other-skills ul li,
@@ -396,14 +397,10 @@ a {
     padding: var(--base-padding);
     font-size: 1.2em;
 }
-/* .other-skills ul li:hover,
+.other-skills ul li:hover,
 .tech-stack ul li:hover {
-    border: 1px solid black;
-    flex: 1 1 30%;
-    text-align: center;
-    padding: var(--base-padding);
-    background: #85dcb1;
-} */
+    background: #5e5e5e;
+}
 
 #wordpress_section,
 #vanilla_section,
