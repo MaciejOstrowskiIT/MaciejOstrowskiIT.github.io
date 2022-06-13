@@ -59,3 +59,37 @@
         });
     });
 })();
+
+(function sectionWithHref() {
+    let getSourceSectionId = document.querySelector(
+        '#react_banking_section'
+    );
+
+    let goToGithubReact = document.querySelector(
+        '#react_banking_app_section'
+    );
+    let goToGithubVanilla = document.querySelector(
+        '#vanilla_section'
+    );
+    let goToWordpress = document.querySelector(
+        '#wordpress_section'
+    );
+
+    getSourceSectionId.addEventListener('click', () => {
+        window.location = '#react_banking_app_section';
+    });
+
+    goToGithubReact.addEventListener('click', () => {
+        window.open(
+            'https://github.com/MaciejOstrowskiIT/React_banking_app'
+        );
+    });
+    goToGithubVanilla.addEventListener('click', () => {
+        window.open(
+            'https://github.com/MaciejOstrowskiIT/MaciejOstrowskiIT.github.io'
+        );
+    });
+    goToWordpress.addEventListener('click', () => {
+        window.open('https://maciej-ostrowski.netlify.app');
+    });
+})();

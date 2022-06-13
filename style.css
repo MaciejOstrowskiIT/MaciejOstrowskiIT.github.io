@@ -405,6 +405,13 @@ a {
     background: #85dcb1;
 } */
 
+#wordpress_section,
+#vanilla_section,
+#react_banking_section,
+#react_banking_app_section {
+    cursor: pointer;
+}
+
 /* Hamburger */
 
 .hamburger {
